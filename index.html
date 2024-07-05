@@ -6,16 +6,643 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- tailwind css cdn link -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/4e12486def.js" crossorigin="anonymous"></script>
+    <!-- google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <title>WPPOOL </title>
+    <!-- internal style -->
+    <style>
+        /*  style for table custom bar  */
+        .scrollbar-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .scrollbar-container::-webkit-scrollbar-thumb {
+            background-color: #2042b6;
+            border-radius: 6px;
+        }
+
+        .scrollbar-container::-webkit-scrollbar-track {
+            background-color: #2042b6;
+            border-radius: 6px;
+        }
+    </style>
+
+    <title>WPPOOL - Rakibul Junior Frontend Developer</title>
 </head>
 
-<body>
+<body class="bg-[#ededed] p-2">
 
     <!-- header -->
-    <header class="">
+    <!-- <header class="bg-[#2042B6] h-screen bg-[url('./images/dots2.png')] bg-no-repeat bg-center"> -->
+    <header class="bg-[#2042B6] h-screen ">
+        <div class="w-[96%] mx-auto ">
+            <nav class="h-24 flex justify-between items-center">
+                <!-- logo -->
+                <div><a href="" class="text-2xl text-white">WPPOOL</a></div>
 
+                <!-- share, repoats, and menu -->
+                <div class="flex items-center gap-5 cursor-pointer">
+                    <div class="border-2 size-10 rounded-full flex items-center justify-center">
+                        <i class="text-white fa-solid fa-share-nodes"></i>
+                    </div>
+
+                    <button type="button" class="border-2 rounded-lg px-3 py-2 text-white">Donwload the 2024
+                        Repoat</button>
+
+                    <div>
+                        <i class="text-white text-2xl cursor-pointer fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </nav>
+
+
+            <!-- hero -->
+            <section class="h-[600px] flex flex-col">
+                <div class="h-full grid  grid-cols-12">
+                    <div class="*:text-white col-span-2 self-end flex flex-col gap-8">
+                        <div>
+                            <h2 class="text-4xl">60</h2>
+                            <p class="text-[#cdcdcd]">Companies</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl">60</h2>
+                            <p class="text-[#cdcdcd]">Companies</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl">$1000B</h2>
+                            <p class="text-[#cdcdcd]">Market cap</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl">3.5x</h2>
+                            <p class="text-[#cdcdcd]">Revenue multiple</p>
+                        </div>
+                        <div>
+                            <h2 class="text-4xl">60%</h2>
+                            <p class="text-[#cdcdcd]">LTM avg. revenue growth rate</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-[url('./images/dots2.png')] bg-no-repeat bg-center bg-black bg-opacity-45 h-full flex flex-col justify-center items-center col-span-8 text-center">
+                        <h2 class="text-6xl font-bold text-white mb-4">The WPPOOL Index</h2>
+                        <p class="text-white">Monitor the performance of emerging, publicly traded, financial technology
+                            companies</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- go down -->
+            <div
+                class="fixed right-4 bottom-6 cursor-pointer border-2 bg-white size-12 shadow-2xl rounded-full flex items-center justify-center">
+                <i class="text-[#2024b6] fa-solid fa-arrow-down"></i>
+            </div>
     </header>
+
+    <!-- The WPPOOL index -->
+    <section class="bg-white p-3 mt-12">
+        <div class="h-16 bg-[#f3f3f3] rounded-md px-4 flex justify-between items-center">
+            <div><a href="" class="text-2xl text-black">WPPOOL</a></div>
+
+            <div class="flex items-center gap-5 cursor-pointer">
+                <div class="border-2 border-[#a1cd80] size-10 rounded-full flex items-center justify-center">
+                    <i class="text-[#191618] fa-solid fa-share-nodes"></i>
+                </div>
+
+                <button type="button" class="border-2 text-[#191618] border-[#115cd9] rounded-lg px-3 py-2">Donwload the
+                    2024
+                    Repoat</button>
+
+                <div>
+                    <i class="text-[#191618] text-2xl cursor-pointer fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- chat - index -->
+        <div class="grid grid-cols-12 mt-3 gap-4">
+            <!-- tab index -->
+            <div class="col-span-2 bg-[#eff3fc] p-3 rounded-md">
+                <ul class="flex flex-col gap-3">
+                    <li class="bg-[#2042b6] px-3 py-2 rounded-md text-white flex justify-between items-center">
+                        <span>The Index</span>
+                        <i class="text-sm fa-solid fa-minus"></i>
+                    </li>
+                    <li class="px-3 py-2 rounded-md text-[#647868] flex justify-between items-center">
+                        <span>The Index Tab Two</span>
+                        <i class="text-sm fa-solid fa-plus"></i>
+                    </li>
+                    <li class="px-3 py-2 rounded-md text-[#647868] flex justify-between items-center">
+                        <span>The Index Tab Three</span>
+                        <i class="text-sm fa-solid fa-plus"></i>
+                    </li>
+                    <li class="px-3 py-2 rounded-md text-[#647868] flex justify-between items-center">
+                        <span>The Index Tab Four</span>
+                        <i class="text-sm fa-solid fa-plus"></i>
+                    </li>
+                    <li class="px-3 py-2 rounded-md text-[#647868] flex justify-between items-center">
+                        <span>The Index Tab Five</span>
+                        <i class="text-sm fa-solid fa-plus"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- index - linechat  -->
+            <div class="col-span-10">
+                <div class="flex items-center gap-2">
+                    <img class="w-8" src="./images/para.PNG" alt="">
+                    <h2 class="text-4xl">The WPPOOL Index</h2>
+                </div>
+
+                <!-- small card - overview -->
+                <div class="my-5 grid grid-cols-4 justify-between items-center gap-5">
+                    <div class="bg-[#f3f3f3] p-3 rounded-md flex items-center justify-between">
+                        <h2 class="text-[#fc714d] text-3xl">+66.2%</h2>
+                        <p class="text-base leading-4	border-r-4 pr-3 border-[#fc714d]">
+                            WPPOOL <br> Index
+                        </p>
+                    </div>
+                    <div class="bg-[#f3f3f3] p-3 rounded-md flex items-center justify-between">
+                        <h2 class="text-[#615de3] text-3xl">+26.6%</h2>
+                        <p class="text-base leading-4	border-r-4 pr-3 border-[#615de3]">
+                            Goolge <br> Index
+                        </p>
+                    </div>
+                    <div class="bg-[#f3f3f3] p-3 rounded-md flex items-center justify-between">
+                        <h2 class="text-[#7ca63a] text-3xl">+34.1%</h2>
+                        <p class="text-base leading-4	border-r-4 pr-3 border-[#7ca63a]">
+                            Microsoft
+                        </p>
+                    </div>
+                    <div class="bg-[#f3f3f3] p-3 rounded-md flex items-center justify-between">
+                        <h2 class="text-[#6f34a1] text-3xl">+17%</h2>
+                        <p class="text-base leading-4	border-r-4 pr-3 border-[#6f34a1]">
+                            Twitter <br> Index
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- select / option -->
+                <div class="flex items-center justify-between">
+                    <div class="flex gap-4">
+                        <button
+                            class="inline-flex items-center text-gray-100 bg-[#2042b6] focus:outline-none hover:bg-[#2550de] font-medium rounded-2xl shadow-xl text-sm px-3 py-1.5"
+                            type="button">
+                            Sectors
+                            <svg class="w-2.5 h-2.5 ml-14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                        <button
+                            class="inline-flex items-center text-gray-100 bg-[#2042b6] focus:outline-none hover:bg-[#2550de] font-medium rounded-2xl shadow-xl text-sm px-3 py-1.5"
+                            type="button">
+                            Types of IPO
+                            <svg class="w-2.5 h-2.5 ml-14" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="border-2 flex justify-end bg-[#eff3f6] pl-16 pr-4 py-1.5 rounded-3xl">
+                        <ul class="w-max flex items-center gap-4">
+                            <li>1Y</li>
+                            <li>YTD</li>
+                            <li class="bg-[#2042b6] text-white px-2 py-0.5 rounded-full">6M</li>
+                            <li>1M</li>
+                            <li>1W</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- line-chat -->
+
+                <div class="w-full">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+                    <canvas id="myChart" style="width:100%;max-width:100%; height: 400px;"></canvas>
+
+                    <!-- <canvas id="myChart" class="w-full mix-h-[100px]"></canvas> -->
+
+                    <script>
+                        const xValues = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct"];
+
+                        new Chart("myChart", {
+                            type: "line",
+                            data: {
+                                labels: xValues,
+                                datasets: [{
+                                    data: [860, 1140, 1360, 1560, 1970, 3110, 3330, 4210, 4478, 5830],
+                                    borderColor: "#fc714d",
+                                    fill: false
+                                }, {
+                                    data: [1600, 1700, 1700, 1900, 2350, 2700, 4500, 5000, 6000, 7000],
+                                    borderColor: "#615de3",
+                                    fill: false
+                                }, {
+                                    data: [300, 700, 2000, 3000, 4200, 4000, 2000, 1000, 800, 600],
+                                    borderColor: "#afcd80",
+                                    fill: false
+                                }, {
+                                    data: [500, 900, 1300, 1800, 2700, 4000, 3800, 4300, 4700, 4900],
+                                    borderColor: "#6f34a1",
+                                    fill: false
+                                }]
+                            },
+                            options: {
+                                legend: { display: true }
+                            }
+                        });
+                    </script>
+                </div>
+
+
+                <div class="my-10 flex items-center justify-center gap-10 *:text-[#191618]">
+                    <p><i class="text-[#fc714d] mr-2 fa-solid fa-stop"></i> WPPOOL</p>
+                    <p><i class="text-[#615de3] mr-2 fa-solid fa-stop"></i> Google</p>
+                    <p><i class="text-[#afcd80] fa-solid fa-stop"></i> Microsoft</p>
+                    <p><i class="text-[#6f34a1] fa-solid fa-stop"></i> Twitter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- all company -->
+    <section class="mt-20 bg-white p-3 rounded-lg">
+        <div class="flex items-center justify-between p-8">
+            <h2 class="text-5xl">All Company</h2>
+
+            <form class="w-[45%]">
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full p-4 ps-10 text-lg text-[#191618] bg-[#f3f3f3] border border-[#dadada] rounded-lg outline-none placeholder:text-black placeholder:text-lg"
+                        placeholder="Search Companies" required />
+                </div>
+            </form>
+        </div>
+
+
+        <!-- company list in a table -->
+
+
+        <div class="relative overflow-x-auto overflow-y-auto max-h-[500px] scrollbar-container">
+            <table class="w-full  text-sm text-left rtl:text-right text-gray-500 ">
+                <thead class="text-xs text-black uppercase bg-white *:text-[14px] py-8">
+                    <tr>
+                        <th class="px-6 py-3 font-bold text-[15px]">
+                            Company
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            Ticker
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            Vertical
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            Price
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            Market Cap ($B)
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            Revenue Growth
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            Gross Margin
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            EV/Revenue
+                        </th>
+                        <th class="px-6 py-3 font-medium">
+                            YTD Performance
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="bg-[#f3f3f3] *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Adyen
+                        </td>
+                        <td class="px-6 py-4">
+                            AFRM
+                        </td>
+                        <td class="px-6 py-4">
+                            Payments
+                        </td>
+                        <td class="px-6 py-4">
+                            $17.15
+                        </td>
+                        <td class="px-6 py-4">
+                            $50.5
+                        </td>
+                        <td class="px-6 py-4">
+                            49.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            15.8%
+                        </td>
+                        <td class="px-6 py-4">
+                            6.3
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            24.3%
+                        </td>
+                    </tr>
+                    <tr class="bg-white *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Affirm
+                        </td>
+                        <td class="px-6 py-4">
+                            AFRM
+                        </td>
+                        <td class="px-6 py-4">
+                            Lending
+                        </td>
+                        <td class="px-6 py-4">
+                            $16.12
+                        </td>
+                        <td class="px-6 py-4">
+                            $4.7
+                        </td>
+                        <td class="px-6 py-4">
+                            32.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            48.7%
+                        </td>
+                        <td class="px-6 py-4">
+                            4.9
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            77.1%
+                        </td>
+                    </tr>
+                    <tr class="bg-[#f3f3f3] *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Alkami Technology
+                        </td>
+                        <td class="px-6 py-4">
+                            ALKT
+                        </td>
+                        <td class="px-6 py-4">
+                            B2B SaaS
+                        </td>
+                        <td class="px-6 py-4">
+                            $16.27
+                        </td>
+                        <td class="px-6 py-4">
+                            $1.5
+                        </td>
+                        <td class="px-6 py-4">
+                            34.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            53.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            7.0
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            10.0%
+                        </td>
+                    </tr>
+                    <tr class="bg-white *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            AvidXchange
+                        </td>
+                        <td class="px-6 py-4">
+                            AVDX
+                        </td>
+                        <td class="px-6 py-4">
+                            Payments
+                        </td>
+                        <td class="px-6 py-4">
+                            $10.21
+                        </td>
+                        <td class="px-6 py-4">
+                            $2.0
+                        </td>
+                        <td class="px-6 py-4">
+                            27.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            61.5%
+                        </td>
+                        <td class="px-6 py-4">
+                            6.0
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            10.5%
+                        </td>
+                    </tr>
+                    <tr class="bg-[#f3f3f3] *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Bakkt Holdings
+                        </td>
+                        <td class="px-6 py-4">
+                            BKKT
+                        </td>
+                        <td class="px-6 py-4">
+                            Wealth
+                        </td>
+                        <td class="px-6 py-4">
+                            $1.32
+                        </td>
+                        <td class="px-6 py-4">
+                            $0.1
+                        </td>
+                        <td class="px-6 py-4">
+                            38%
+                        </td>
+                        <td class="px-6 py-4">
+                            --
+                        </td>
+                        <td class="px-6 py-4">
+                            0.4
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            13.8%
+                        </td>
+                    </tr>
+                    <tr class="bg-white *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Virtu Financial Inc
+                        </td>
+                        <td class="px-6 py-4">
+                            VIRT
+                        </td>
+                        <td class="px-6 py-4">
+                            Wealth
+                        </td>
+                        <td class="px-6 py-4">
+                            $17.0
+                        </td>
+                        <td class="px-6 py-4">
+                            $3.1
+                        </td>
+                        <td class="px-6 py-4">
+                            -22.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            38.2%
+                        </td>
+                        <td class="px-6 py-4">
+                            2.6
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            -17.8%
+                        </td>
+                    </tr>
+
+                    <tr class="bg-[#f3f3f3] *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Adyen
+                        </td>
+                        <td class="px-6 py-4">
+                            AFRM
+                        </td>
+                        <td class="px-6 py-4">
+                            Payments
+                        </td>
+                        <td class="px-6 py-4">
+                            $17.15
+                        </td>
+                        <td class="px-6 py-4">
+                            $50.5
+                        </td>
+                        <td class="px-6 py-4">
+                            49.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            15.8%
+                        </td>
+                        <td class="px-6 py-4">
+                            6.3
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            24.3%
+                        </td>
+                    </tr>
+                    <tr class="bg-white *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Affirm
+                        </td>
+                        <td class="px-6 py-4">
+                            AFRM
+                        </td>
+                        <td class="px-6 py-4">
+                            Lending
+                        </td>
+                        <td class="px-6 py-4">
+                            $16.12
+                        </td>
+                        <td class="px-6 py-4">
+                            $4.7
+                        </td>
+                        <td class="px-6 py-4">
+                            32.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            48.7%
+                        </td>
+                        <td class="px-6 py-4">
+                            4.9
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            77.1%
+                        </td>
+                    </tr>
+                    <tr class="bg-[#f3f3f3] *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            Alkami Technology
+                        </td>
+                        <td class="px-6 py-4">
+                            ALKT
+                        </td>
+                        <td class="px-6 py-4">
+                            B2B SaaS
+                        </td>
+                        <td class="px-6 py-4">
+                            $16.27
+                        </td>
+                        <td class="px-6 py-4">
+                            $1.5
+                        </td>
+                        <td class="px-6 py-4">
+                            34.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            53.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            7.0
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            10.0%
+                        </td>
+                    </tr>
+                    <tr class="bg-white *:text-black *:text-[17px] rounded-lg">
+                        <td class="px-6 py-4 rounded-l-lg">
+                            AvidXchange
+                        </td>
+                        <td class="px-6 py-4">
+                            AVDX
+                        </td>
+                        <td class="px-6 py-4">
+                            Payments
+                        </td>
+                        <td class="px-6 py-4">
+                            $10.21
+                        </td>
+                        <td class="px-6 py-4">
+                            $2.0
+                        </td>
+                        <td class="px-6 py-4">
+                            27.0%
+                        </td>
+                        <td class="px-6 py-4">
+                            61.5%
+                        </td>
+                        <td class="px-6 py-4">
+                            6.0
+                        </td>
+                        <td class="px-6 py-4 rounded-r-lg">
+                            10.5%
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="py-96">
+        <div class="bg-transparent h-screen bg-[url('./images/dots.png')] bg-no-repeat bg-center">
+            <div class="bg-blue-500 h-96">
+                goooooooo
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
