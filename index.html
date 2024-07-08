@@ -37,7 +37,7 @@
 <body class="bg-[#ededed] p-3">
 
     <!-- header -->
-    <header class="bg-[#2042B6] h-screen">
+    <header class="bg-[#2042B6] h-screen relative">
         <div class="w-[96%] mx-auto ">
             <nav class="h-24 flex justify-between items-center">
                 <!-- logo -->
@@ -54,11 +54,35 @@
                     <button type="button" class="border-2 rounded-lg px-3 py-2 text-white">Donwload the 2024
                         Repoat</button>
 
-                    <div>
+                    <div id="menu-button">
                         <i class="text-white text-2xl cursor-pointer fa-solid fa-bars"></i>
                     </div>
                 </div>
             </nav>
+
+            <!-- mobile dropdown menu -->
+            <div id="dropdown"
+                class="p-5 absolute hidden flex-col top-0 right-0 rounded-l-lg rounded-b-lg bg-white text-black space-y-2">
+                <div class="flex items-center justify-between gap-3">
+                    <div class="bg-[#AFCD80] size-10 rounded-full flex items-center justify-center cursor-pointer">
+                        <i class="text-white fa-solid fa-share-nodes"></i>
+                    </div>
+                    <button type="button" class="bg-[#2042B6] rounded-3xl px-3 py-2 text-white">Download
+                        the 2024 Report</button>
+                    <div id="close" class="cursor-pointer">
+                        <i class="text-xl fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                    <a href="#" class="block text-lg text-[#191618] px-3 py-2  rounded">The WPPOOL Index</a>
+                    <a href="#" class="block text-lg text-[#191618] px-3 py-2  rounded">All Companies</a>
+                    <a href="#" class="block text-lg text-[#191618] px-3 py-2  rounded">Potential Future Listings</a>
+                    <a href="#" class="block text-lg text-[#191618] px-3 py-2  rounded">State of USA</a>
+                    <a href="#" class="block text-lg text-[#191618] px-3 py-2  rounded">Stories & Ideas</a>
+                    <a href="#" class="block text-lg text-[#191618] px-3 py-2  rounded">About WPPOOL</a>
+                    <a href="#" class="block text-xl text-[#2042B6] px-3 py-2  rounded">Visit WPPOOL</a>
+                </div>
+            </div>
 
 
             <!-- hero -->
@@ -141,8 +165,9 @@
             <!-- go down -->
             <div
                 class="fixed right-4 bottom-6 cursor-pointer border-2 bg-white size-12 shadow-2xl rounded-full flex items-center justify-center">
-                <i class="text-[#2024b6] fa-solid fa-arrow-down"></i>
+                <i class="text-[rgb(32,36,182)] fa-solid fa-arrow-down"></i>
             </div>
+        </div>
     </header>
 
     <main class="mt-10">
@@ -1633,6 +1658,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- javascript -->
     <script src="./scripts/script.js"></script>
