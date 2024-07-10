@@ -17,3 +17,8 @@ function goForwardSlide() {
   const container = document.querySelector(".carousel");
   container.scrollBy({ left: container.clientWidth, behavior: "smooth" });
 }
+
+// go down
+function scrollToBottom() {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+}
